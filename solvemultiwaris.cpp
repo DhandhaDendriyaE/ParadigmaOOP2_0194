@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 class orang {
     public:
         int umur;
@@ -12,7 +11,7 @@ class orang {
             cout << "orang dibuat dengan umur" << umur << "\n" << endl;
         }
 };
-class pekerja : virtual public orang {
+class pekerja : public orang {
         public:
 
         pekerja(int pUmur) :
@@ -23,7 +22,7 @@ class pekerja : virtual public orang {
 };
       
 
-class pelajar : virtual public orang {
+class pelajar : public orang {
 public:
     pelajar(int pUmur) :
     orang(pUmur)
