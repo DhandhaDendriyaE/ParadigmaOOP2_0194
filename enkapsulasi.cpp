@@ -15,6 +15,7 @@ class remotelampu{
     }
 };
 
+
 int main (){
     remotelampu lampuRumah;
     lampuRumah. setSaklarNo(0, "Lampu Teras Rumah");
