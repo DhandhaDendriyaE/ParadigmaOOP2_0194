@@ -1,16 +1,27 @@
 #include <iostream>
 using namespace std;
 
-class seseorang {
-    public:
-    virtual void pesan(){
-        cout<<"pesan dari seseorang"<<endl;
-    }
-};
+class Abstraksiklas{
+    private: string x, y;
 
-class joko :public seseorang{
     public:
-    void pesan(){
-        cout << "pesan dari joko" << endl;
+    
+    //method untuk mengisi nilai
+    //private member
+    void setXY(string a, string b) {
+        x = a;
+        y = b;
+    }
+    //menampilkan nilai
+    void display(){
+        cout << "x =" << x << endl;
+        cout << "y =" << y << endl;
     }
 };
+int main (){
+    Abstraksiklas ak;
+    ak.setXY("Yogyakarta", "Kampus");
+    ak.display();
+
+    return 0;
+}
